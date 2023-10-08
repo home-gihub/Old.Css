@@ -174,13 +174,6 @@ fieldset {
     color: #818581;
 }
 
-font {
-    display: inline;
-    font-family: serif;
-    text-align: left;
-    font-weight: 400;
-}
-
 div {
     display: block;
 }
@@ -280,9 +273,9 @@ input[type="text"], input[list], textarea, select, input[type="number"], input[t
     display: inline-block;
     background-color: #f4f8f4;
     border-left: 2px solid #000000;
-    border-right: 1.5px solid #b8bcb8;
+    border-right: 1px solid #818581;
     border-top: 2px solid #000000;
-    border-bottom: 1.5px solid #b8bcb8;
+    border-bottom: 1px solid #818581;
 }
 
 input[type="checkbox"] {
@@ -323,13 +316,11 @@ br {
 
 center {
     display: block;
-    text-align: center;
-    align-items: center;
+    text-align: -webkit-center;
 }
 
 center > * {
-    text-align: center;
-    margin: auto;
+    text-align: -webkit-center;
 }
 
 table {
