@@ -178,6 +178,13 @@ div {
     display: block;
 }
 
+font {
+    display: inline;
+    font-family: serif;
+    text-align: left;
+    font-weight: 400;
+}
+
 p {
     color: black;
     display: block;
