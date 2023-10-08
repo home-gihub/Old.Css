@@ -167,6 +167,10 @@ font {
     font-weight: 400;
 }
 
+div {
+    display: block;
+}
+
 p {
     color: black;
     display: block;
@@ -229,7 +233,8 @@ h6 {
     font-size: 0.67em;
 }
 
-button {
+button, input[type="submit"], input[type="button"], input[type="color"] {
+    text-align: center;
     display: inline-block;
     background-color: #b8bcb8;
     border-left: 1px solid #f4f8f4;
@@ -239,7 +244,7 @@ button {
     padding: 0.2em;
 }
 
-button:active {
+button:active, input[type="submit"]:active, input[type="button"]:active {
     background-color: #b8bcb8;
     border-right: 1px solid #f4f8f4;
     border-left: 1px solid #818581;
@@ -247,49 +252,31 @@ button:active {
     border-top: 1px solid #818581;
 }
 
-input[type="submit"] {
+input[type="range"]::-ms-track {
+    color: #000000;
+    border-bottom: 1px solid #b8bcb8;
+    height: 2px;
+}
+
+input {
     display: inline-block;
-    background-color: #b8bcb8;
-    border-left: 1px solid #f4f8f4;
-    border-right: 1px solid #818581;
-    border-top: 1px solid #f4f8f4;
-    border-bottom: 1px solid #818581;
-    padding: 0.2em;
 }
 
-input[type="submit"]:active {
-    background-color: #b8bcb8;
-    border-right: 1px solid #f4f8f4;
-    border-left: 1px solid #818581;
-    border-bottom: 1px solid #f4f8f4;
-    border-top: 1px solid #818581;
-}
-
-textarea {
+input[type="text"], input[list], textarea, select, input[type="number"], input[type="search"], input[type="url"], input[type="tel"], input[type="password"], input[type="email"] {
     display: inline-block;
     background-color: #f4f8f4;
     border-left: 2px solid #000000;
-    border-right: 1px solid #b8bcb8;
+    border-right: 1.5px solid #b8bcb8;
     border-top: 2px solid #000000;
-    border-bottom: 1px solid #b8bcb8;
+    border-bottom: 1.5px solid #b8bcb8;
 }
 
-input[type="text"] {
-    display: inline-block;
-    background-color: #f4f8f4;
+input[type="checkbox"] {
+    color: #f4f8f4;
     border-left: 2px solid #000000;
-    border-right: 1px solid #b8bcb8;
+    border-right: 1.5px solid #b8bcb8;
     border-top: 2px solid #000000;
-    border-bottom: 1px solid #b8bcb8;
-}
-
-select {
-    display: inline-block;
-    background-color: #f4f8f4;
-    border-left: 2px solid #000000;
-    border-right: 1px solid #b8bcb8;
-    border-top: 2px solid #000000;
-    border-bottom: 1px solid #b8bcb8;
+    border-bottom: 1.5px solid #b8bcb8;
 }
 
 option {
