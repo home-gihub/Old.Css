@@ -179,7 +179,7 @@ div {
 }
 
 font {
-    display: block;
+    display: inline;
     font-family: serif;
     text-align: left;
     font-weight: 400;
