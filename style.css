@@ -133,14 +133,12 @@
 }
 
 /* use this to remember the colors */
-/* {
+:root {
     --foreground-color: #b8bcb8;
     --highlight-color: #f4f8f4;
     --lshadow-color: #818581;
-    --hshadow-color: #000000;
+    --hshadow-color: #2c2c2c;
 }
-*/
-
 
 
 
@@ -151,7 +149,7 @@ body {
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: #b8bcb8;
+    background-color: var(--foreground-color);
     zoom: 1;
     clip: unset;
 }
@@ -165,13 +163,13 @@ fieldset {
     width: fit-content;
     margin-inline-start: 2px;
     margin-inline-end: 2px;
-    border: groove 2px #f4f8f4;
+    border: groove 2px var(--highlight-color);
     padding-block-start: 0.35em;
     padding-inline-end: 0.75em;
     padding-block-end: 0.625em;
     padding-inline-start: 0.75em;
     min-inline-size: min-content;
-    color: #818581;
+    color: var(--lshadow-color);
 }
 
 div {
@@ -250,25 +248,25 @@ h6 {
 button, input[type="submit"], input[type="button"], input[type="color"] {
     text-align: center;
     display: inline-block;
-    background-color: #b8bcb8;
-    border-left: 1px solid #f4f8f4;
-    border-right: 1px solid #818581;
-    border-top: 1px solid #f4f8f4;
-    border-bottom: 1px solid #818581;
+    background-color: var(--foreground-color);
+    border-left: 1px solid var(--highlight-color);
+    border-right: 1px solid var(--lshadow-color);
+    border-top: 1px solid var(--highlight-color);
+    border-bottom: 1px solid var(--lshadow-color);
     padding: 0.2em;
 }
 
 button:active, input[type="submit"]:active, input[type="button"]:active {
-    background-color: #b8bcb8;
-    border-right: 1px solid #f4f8f4;
-    border-left: 1px solid #818581;
-    border-bottom: 1px solid #f4f8f4;
-    border-top: 1px solid #818581;
+    background-color: var(--foreground-color);
+    border-right: 1px solid var(--highlight-color);
+    border-left: 1px solid var(--lshadow-color);
+    border-bottom: 1px solid var(--highlight-color);
+    border-top: 1px solid var(--lshadow-color);
 }
 
 input[type="range"]::-ms-track {
-    color: #000000;
-    border-bottom: 1px solid #b8bcb8;
+    color: var(--hshadow-color);
+    border-bottom: 1px solid var(--foreground-color);
     height: 2px;
 }
 
@@ -278,19 +276,19 @@ input {
 
 input[type="text"], input[list], textarea, select, input[type="number"], input[type="search"], input[type="url"], input[type="tel"], input[type="password"], input[type="email"] {
     display: inline-block;
-    background-color: #f4f8f4;
-    border-left: 2px solid #000000;
-    border-right: 1px solid #818581;
-    border-top: 2px solid #000000;
-    border-bottom: 1px solid #818581;
+    background-color: var(--highlight-color);
+    border-left: 2px solid var(--hshadow-color);
+    border-right: 1.5px solid var(--lshadow-color);
+    border-top: 2px solid var(--hshadow-color);
+    border-bottom: 1.5px solid var(--lshadow-color);
 }
 
 input[type="checkbox"] {
-    color: #f4f8f4;
-    border-left: 2px solid #000000;
-    border-right: 1.5px solid #b8bcb8;
-    border-top: 2px solid #000000;
-    border-bottom: 1.5px solid #b8bcb8;
+    color: var(--highlight-color);
+    border-left: 2px solid var(--hshadow-color);
+    border-right: 1.5px solid var(--foreground-color);
+    border-top: 2px solid var(--hshadow-color);
+    border-bottom: 1.5px solid var(--foreground-color);
 }
 
 option {
@@ -305,12 +303,21 @@ img {
 }
 
 a {
-    color: blue;
+    color: #0000EE;
     text-decoration: underline;
+    cursor: pointer;
     display: inline;
     font-family: serif;
     text-align: left;
     font-weight: 400;
+}
+
+a:visited {
+    color: #551A8B
+}
+
+a:active {
+    color: #FF0000
 }
 
 form {
@@ -336,10 +343,10 @@ table {
     border-spacing: 2px;
     border-collapse: separate;
     text-indent: initial;
-    border-left: 1px solid #f4f8f4;
-    border-right: 1px solid #818581;
-    border-top: 1px solid #f4f8f4;
-    border-bottom: 1px solid #818581;
+    border-left: 1px solid var(--highlight-color);
+    border-right: 1px solid var(--lshadow-color);
+    border-top: 1px solid var(--highlight-color);
+    border-bottom: 1px solid var(--lshadow-color);
 }
 
 tbody {
@@ -363,8 +370,12 @@ td {
     display: table-cell;
     padding: 1px;
     vertical-align: inherit;
-    border-right: 1px solid #f4f8f4;
-    border-left: 1px solid #818581;
-    border-bottom: 1px solid #f4f8f4;
-    border-top: 1px solid #818581;
+    border-right: 1px solid var(--highlight-color);
+    border-left: 1px solid var(--lshadow-color);
+    border-bottom: 1px solid var(--highlight-color);
+    border-top: 1px solid var(--lshadow-color);
+}
+
+iframe {
+    border: 2px inset;
 }
