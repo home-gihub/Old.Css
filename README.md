@@ -5,6 +5,7 @@ CSS stylesheet to make your website look old
 - nice gray coloring
 - 3d chieled goodness
 - makes elements unsuported
+- center tag is a thing
 
 ## why
 do you like windows 98 look?
