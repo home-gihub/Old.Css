@@ -154,6 +154,18 @@ body {
     clip: unset;
 }
 
+head {
+    display:none;
+}
+
+script {
+    display: none;
+}
+
+style {
+    display: none;
+}
+
 html {
     display: block
 }
