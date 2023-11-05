@@ -460,6 +460,11 @@ th {
     padding: 1px;
     vertical-align: inherit;
     font-weight: bold;
+    border-right: 1px solid var(--highlight-color);
+    border-left: 1px solid var(--lshadow-color);
+    border-bottom: 1px solid var(--highlight-color);
+    border-top: 1px solid var(--lshadow-color);
+    background-color: var(--foreground-color)
 }
 
 col {
