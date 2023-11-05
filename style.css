@@ -306,7 +306,7 @@ a {
     color: #0000EE;
     text-decoration: underline;
     cursor: pointer;
-    display: inline;
+    display: block;
     font-family: serif;
     text-align: left;
     font-weight: 400;
@@ -347,6 +347,12 @@ table {
     border-right: 1px solid var(--lshadow-color);
     border-top: 1px solid var(--highlight-color);
     border-bottom: 1px solid var(--lshadow-color);
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
 
 tbody {
