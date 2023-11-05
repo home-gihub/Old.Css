@@ -455,6 +455,13 @@ td {
     background-color: var(--foreground-color)
 }
 
+th {
+    display: table-cell;
+    padding: 1px;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
 col {
     display: table-column;
 }
